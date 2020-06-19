@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        
+        <div id = "app">
+            <button onclick = "mostraAlerta()"> Meu primeiro botão </button>
+            <button onmouseover = "mostraAlerta2()" > Segundo botão </button>
+            <input onkeypress = "mostraAlerta()" />
+        </div>
+
+        <script>
+        
+            // DOM -> Árvore de elementos dentro do html -> "Interface"
+            function mostraAlerta()
+            {
+                alert("Botão foi clicado");
+            }
+            function mostraAlerta2()
+            {
+                alert("Gênio!");
+            }
+        </script>
+    </body>
+</html> 

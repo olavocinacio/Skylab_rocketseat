@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <div id = "app">
+            <input id = nome />
+            
+        </div>
+       
+        <script>
+            
+            var linkElement = document.createElement("a"); //Parâmetro -> Tag do elemento
+
+            linkElement.setAttribute("href", "http://rocketseat.com.br"); //Parâmetros -> tipo do atributo, link que ele abrirá ao ser pressionado
+            linkElement.setAttribute("title","Site da rocketseat");
+
+            var textElement = document.createTextNode("Acessar site rocketseat");
+            linkElement.appendChild(textElement); //o texto é adcionado ao linkELement
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
+
+            //Esse processo cria algo semelhante ao código  "<a> href = "http://rocketseat.com.br">Acessar site rocketseat</a>" caso esse seja escrito fora do script
+
+            var inputElement = document.querySelector('#nome');
+            containerElement.removeChild(inputElement); //Apaga input criado no body
+            
+        </script>        
+    </body>
+</html>

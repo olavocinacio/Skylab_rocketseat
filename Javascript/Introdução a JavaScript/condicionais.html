@@ -1,0 +1,42 @@
+<html>
+    <html>
+        <title>Curso Javascript</title>
+    </html>
+    <body>
+        <script>
+            
+            function retornaSexo(sexo)
+            {
+                //Recebe M ou F e retorna Masculino ou Feminino
+                // == -> verifica o valor das variáveis
+                // === -> verifica o valor e o tipo das variáveis
+                if(sexo == "M")
+                {
+                    return "Masculino";
+                }
+                else if(sexo == "F")
+                {
+                    return "Feminino";
+                }
+                else
+                {
+                    return "Entrada inválida";
+                }
+
+                switch(sexo)
+                {
+                    case "M":
+                        return "Masculino";
+                    case "F":
+                        return "Feminino";
+                    default:
+                        return "Entrada inválida";
+                }
+            }
+
+            var resultado = retornaSexo("M");
+            console.log(resultado);
+
+        </script>
+    </body>
+</html>
